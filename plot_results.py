@@ -29,15 +29,19 @@ args = parser.parse_args()
 
 
 
-period = 3
-# _traffics = "random1 random2 random3 random4 random5 random6 random7 random8 random9 random10 random11 random12 random13 random14 random15 random16 random17 random18 random19 random20 stag1_0.1_0.2 stag2_0.1_0.2 stag3_0.1_0.2 stag4_0.1_0.2 stag5_0.1_0.2 stag6_0.1_0.2 stag7_0.1_0.2 stag8_0.1_0.2 stag9_0.1_0.2 stag10_0.1_0.2 stag11_0.1_0.2 stag12_0.1_0.2 stag13_0.1_0.2 stag14_0.1_0.2 stag15_0.1_0.2 stag16_0.1_0.2 stag17_0.1_0.2 stag18_0.1_0.2 stag19_0.1_0.2 stag20_0.1_0.2 stag1_0.2_0.3 stag2_0.2_0.3 stag3_0.2_0.3 stag4_0.2_0.3 stag5_0.2_0.3 stag6_0.2_0.3 stag7_0.2_0.3 stag8_0.2_0.3 stag9_0.2_0.3 stag10_0.2_0.3 stag11_0.2_0.3 stag12_0.2_0.3 stag13_0.2_0.3 stag14_0.2_0.3 stag15_0.2_0.3 stag16_0.2_0.3 stag17_0.2_0.3 stag18_0.2_0.3 stag19_0.2_0.3 stag20_0.2_0.3 stag1_0.3_0.3 stag2_0.3_0.3 stag3_0.3_0.3 stag4_0.3_0.3 stag5_0.3_0.3 stag6_0.3_0.3 stag7_0.3_0.3 stag8_0.3_0.3 stag9_0.3_0.3 stag10_0.3_0.3 stag11_0.3_0.3 stag12_0.3_0.3 stag13_0.3_0.3 stag14_0.3_0.3 stag15_0.3_0.3 stag16_0.3_0.3 stag17_0.3_0.3 stag18_0.3_0.3 stag19_0.3_0.3 stag20_0.3_0.3 stag1_0.4_0.3 stag2_0.4_0.3 stag3_0.4_0.3 stag4_0.4_0.3 stag5_0.4_0.3 stag6_0.4_0.3 stag7_0.4_0.3 stag8_0.4_0.3 stag9_0.4_0.3 stag10_0.4_0.3 stag11_0.4_0.3 stag12_0.4_0.3 stag13_0.4_0.3 stag14_0.4_0.3 stag15_0.4_0.3 stag16_0.4_0.3 stag17_0.4_0.3 stag18_0.4_0.3 stag19_0.4_0.3 stag20_0.4_0.3 stag1_0.5_0.3 stag2_0.5_0.3 stag3_0.5_0.3 stag4_0.5_0.3 stag5_0.5_0.3 stag6_0.5_0.3 stag7_0.5_0.3 stag8_0.5_0.3 stag9_0.5_0.3 stag10_0.5_0.3 stag11_0.5_0.3 stag12_0.5_0.3 stag13_0.5_0.3 stag14_0.5_0.3 stag15_0.5_0.3 stag16_0.5_0.3 stag17_0.5_0.3 stag18_0.5_0.3 stag19_0.5_0.3 stag20_0.5_0.3 stag1_0.6_0.2 stag2_0.6_0.2 stag3_0.6_0.2 stag4_0.6_0.2 stag5_0.6_0.2 stag6_0.6_0.2 stag7_0.6_0.2 stag8_0.6_0.2 stag9_0.6_0.2 stag10_0.6_0.2 stag11_0.6_0.2 stag12_0.6_0.2 stag13_0.6_0.2 stag14_0.6_0.2 stag15_0.6_0.2 stag16_0.6_0.2 stag17_0.6_0.2 stag18_0.6_0.2 stag19_0.6_0.2 stag20_0.6_0.2 stag1_0.7_0.2 stag2_0.7_0.2 stag3_0.7_0.2 stag4_0.7_0.2 stag5_0.7_0.2 stag6_0.7_0.2 stag7_0.7_0.2 stag8_0.7_0.2 stag9_0.7_0.2 stag10_0.7_0.2 stag11_0.7_0.2 stag12_0.7_0.2 stag13_0.7_0.2 stag14_0.7_0.2 stag15_0.7_0.2 stag16_0.7_0.2 stag17_0.7_0.2 stag18_0.7_0.2 stag19_0.7_0.2 stag20_0.7_0.2 stag1_0.8_0.1 stag2_0.8_0.1 stag3_0.8_0.1 stag4_0.8_0.1 stag5_0.8_0.1 stag6_0.8_0.1 stag7_0.8_0.1 stag8_0.8_0.1 stag9_0.8_0.1 stag10_0.8_0.1 stag11_0.8_0.1 stag12_0.8_0.1 stag13_0.8_0.1 stag14_0.8_0.1 stag15_0.8_0.1 stag16_0.8_0.1 stag17_0.8_0.1 stag18_0.8_0.1 stag19_0.8_0.1 stag20_0.8_0.1"
-#_traffics = "random stag_0.1_0.2 stag_0.2_0.3 stag_0.3_0.3 stag_0.4_0.3 stag_0.5_0.3 stag_0.6_0.2 stag_0.7_0.2 stag_0.8_0.1"
-_traffics="random1 random2 random3 stag1_0.1_0.2 stag2_0.1_0.2 stag3_0.1_0.2 stag1_0.2_0.3 stag2_0.2_0.3 stag3_0.2_0.3 stag1_0.3_0.3 stag2_0.3_0.3 stag3_0.3_0.3 stag1_0.4_0.3 stag2_0.4_0.3 stag3_0.4_0.3 stag1_0.5_0.3 stag2_0.5_0.3 stag3_0.5_0.3 stag1_0.6_0.2 stag2_0.6_0.2 stag3_0.6_0.2 stag1_0.7_0.2 stag2_0.7_0.2 stag3_0.7_0.2 stag1_0.8_0.1 stag2_0.8_0.1 stag3_0.8_0.1"
+period = 1
+
+
+_traffics = "random stag_0.1_0.2 stag_0.2_0.3 stag_0.3_0.3 stag_0.4_0.3 stag_0.5_0.3 stag_0.6_0.2 stag_0.7_0.2 stag_0.8_0.1"
+#_traffics="random1 random2 random3 stag1_0.1_0.2 stag2_0.1_0.2 stag3_0.1_0.2 stag1_0.2_0.3 stag2_0.2_0.3 stag3_0.2_0.3 stag1_0.3_0.3 stag2_0.3_0.3 stag3_0.3_0.3 stag1_0.4_0.3 stag2_0.4_0.3 stag3_0.4_0.3 stag1_0.5_0.3 stag2_0.5_0.3 stag3_0.5_0.3 stag1_0.6_0.2 stag2_0.6_0.2 stag3_0.6_0.2 stag1_0.7_0.2 stag2_0.7_0.2 stag3_0.7_0.2 stag1_0.8_0.1 stag2_0.8_0.1 stag3_0.8_0.1"
 #_traffics = "stag_0.2_0.3"
 
 traffics = _traffics.split(' ')
+
+
 traffics_brief = ['random', 'stag_0.1_0.2', 'stag_0.2_0.3', 'stag_0.3_0.3', 'stag_0.4_0.3', 'stag_0.5_0.3','stag_0.6_0.2', 'stag_0.7_0.2', 'stag_0.8_0.1']
 #traffics_brief = ['stag_0.2_0.3']
+
 #apps = ['BFlows', 'ECMP', 'PureSDN', 'Hedera', 'Fuzzy']
 #apps = ['ECMP1', 'ECMP2', 'Hedera1', 'Hedera2', 'Fuzzy1','Fuzzy2']
 apps = ['ECMP1', 'Hedera1', 'Fuzzy1']
@@ -45,477 +49,506 @@ apps = ['ECMP1', 'Hedera1', 'Fuzzy1']
 
 
 def read_file_1(file_name, delim=','):
-	"""
-		Read the bwmng.txt file.
-	"""
-	read_file = open(file_name, 'r')
-	lines = read_file.xreadlines()
-	lines_list = []
-	for line in lines:
-		line_list = line.strip().split(delim)
-		lines_list.append(line_list)
-	read_file.close()
+    """
+        Read the bwmng.txt file.
+    """
+    read_file = open(file_name, 'r')
+    lines = read_file.xreadlines()
+    lines_list = []
+    for line in lines:
+        line_list = line.strip().split(delim)
+        lines_list.append(line_list)
+    read_file.close()
 
-	# Remove the last second's statistics, because they are mostly not intact.
-	last_second = lines_list[-1][0]
-	_lines_list = lines_list[:]
-	for line in _lines_list:
-		if line[0] == last_second:
-			lines_list.remove(line)
+    # Remove the last second's statistics, because they are mostly not intact.
+    last_second = lines_list[-1][0]
+    _lines_list = lines_list[:]
+    for line in _lines_list:
+        if line[0] == last_second:
+            lines_list.remove(line)
 
-	return lines_list
+    return lines_list
 
 def read_file_2(file_name):
-	"""
-		Read the first_packets.txt and successive_packets.txt file.
-	"""
-	read_file = open(file_name, 'r')
-	lines = read_file.xreadlines()
-	lines_list = []
-	for line in lines:
-		if line.startswith('rtt') or line.endswith('ms\n'):
-			lines_list.append(line)
-	read_file.close()
-	return lines_list
+    """
+        Read the first_packets.txt and successive_packets.txt file.
+    """
+    read_file = open(file_name, 'r')
+    lines = read_file.xreadlines()
+    lines_list = []
+    for line in lines:
+        if line.startswith('rtt') or line.endswith('ms\n'):
+            lines_list.append(line)
+    read_file.close()
+    return lines_list
 
 def calculate_average(value_list):
-	if(len(value_list)==0):
-		return 0
-	average_value = sum(map(float, value_list)) / len(value_list)
-	return average_value
+    if(len(value_list)==0):
+        return 0
+    average_value = sum(map(float, value_list)) / len(value_list)
+    return average_value
 
 def get_throughput(throughput, traffic, app, input_file):
-	"""
-		csv output format:
-		(Type rate)
-		unix_timestamp;iface_name;bytes_out/s;bytes_in/s;bytes_total/s;bytes_in;bytes_out;packets_out/s;packets_in/s;packets_total/s;packets_in;packets_out;errors_out/s;errors_in/s;errors_in;errors_out\n
-		(Type svg, sum, max)
-		unix timestamp;iface_name;bytes_out;bytes_in;bytes_total;packets_out;packets_in;packets_total;errors_out;errors_in\n
-		The bwm-ng mode used is 'rate'.
+    """
+        csv output format:
+        (Type rate)
+        unix_timestamp;iface_name;bytes_out/s;bytes_in/s;bytes_total/s;bytes_in;bytes_out;packets_out/s;packets_in/s;packets_total/s;packets_in;packets_out;errors_out/s;errors_in/s;errors_in;errors_out\n
+        (Type svg, sum, max)
+        unix timestamp;iface_name;bytes_out;bytes_in;bytes_total;packets_out;packets_in;packets_total;errors_out;errors_in\n
+        The bwm-ng mode used is 'rate'.
 
-		throughput = {
-						'random1':
-						{
-							'realtime_bisection_bw': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
-							'realtime_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
-							'accumulated_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
-							'normalized_total_throughput': {'BFlows':x%, 'ECMP':x%, ...}
-						},
-						'random2':
-						{
-							'realtime_bisection_bw': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
-							'realtime_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
-							'accumulated_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
-							'normalized_total_throughput': {'BFlows':x%, 'ECMP':x%, ...}
-						},
-						...
-					}
-	"""
-	full_bisection_bw = 10.0 * (args.k ** 3 / 4)   # (unit: Mbit/s)
-	lines_list = read_file_1(input_file)
-	first_second = int(lines_list[0][0])
-	column_bytes_out_rate = 2   # bytes_out/s
-	column_bytes_out = 6   # bytes_out
+        throughput = {
+                        'random1':
+                        {
+                            'realtime_bisection_bw': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
+                            'realtime_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
+                            'accumulated_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
+                            'normalized_total_throughput': {'BFlows':x%, 'ECMP':x%, ...}
+                        },
+                        'random2':
+                        {
+                            'realtime_bisection_bw': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
+                            'realtime_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
+                            'accumulated_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
+                            'normalized_total_throughput': {'BFlows':x%, 'ECMP':x%, ...}
+                        },
+                        ...
+                    }
+    """
+    full_bisection_bw = 10.0 * (args.k ** 3 / 4)   # (unit: Mbit/s)
+    lines_list = read_file_1(input_file)
+    first_second = int(lines_list[0][0])
+    column_bytes_out_rate = 2   # bytes_out/s
+    column_bytes_out = 6   # bytes_out
 
-	# if app == 'NonBlocking':
-	# 	switch = '1001'
-	# elif app in ['ECMP', 'Hedera', 'PureSDN', 'BFlows']:
-	switch = '3[0-9][0-9][0-9]'
-	# else:
-	# 	pass
-	sw = re.compile(switch)
+    # if app == 'NonBlocking':
+    # 	switch = '1001'
+    # elif app in ['ECMP', 'Hedera', 'PureSDN', 'BFlows']:
+    switch = '3[0-9][0-9][0-9]'
+    # else:
+    # 	pass
+    sw = re.compile(switch)
 
-	if not throughput.has_key(traffic):
-		throughput[traffic] = {}
+    if not throughput.has_key(traffic):
+        throughput[traffic] = {}
 
-	if not throughput[traffic].has_key('realtime_bisection_bw'):
-		throughput[traffic]['realtime_bisection_bw'] = {}
-	if not throughput[traffic].has_key('realtime_throughput'):
-		throughput[traffic]['realtime_throughput'] = {}
-	if not throughput[traffic].has_key('accumulated_throughput'):
-		throughput[traffic]['accumulated_throughput'] = {}
-	if not throughput[traffic].has_key('normalized_total_throughput'):
-		throughput[traffic]['normalized_total_throughput'] = {}
+    if not throughput[traffic].has_key('realtime_bisection_bw'):
+        throughput[traffic]['realtime_bisection_bw'] = {}
+    if not throughput[traffic].has_key('realtime_throughput'):
+        throughput[traffic]['realtime_throughput'] = {}
+    if not throughput[traffic].has_key('accumulated_throughput'):
+        throughput[traffic]['accumulated_throughput'] = {}
+    if not throughput[traffic].has_key('normalized_total_throughput'):
+        throughput[traffic]['normalized_total_throughput'] = {}
 
-	if not throughput[traffic]['realtime_bisection_bw'].has_key(app):
-		throughput[traffic]['realtime_bisection_bw'][app] = {}
-	if not throughput[traffic]['realtime_throughput'].has_key(app):
-		throughput[traffic]['realtime_throughput'][app] = {}
-	if not throughput[traffic]['accumulated_throughput'].has_key(app):
-		throughput[traffic]['accumulated_throughput'][app] = {}
-	if not throughput[traffic]['normalized_total_throughput'].has_key(app):
-		throughput[traffic]['normalized_total_throughput'][app] = 0
+    if not throughput[traffic]['realtime_bisection_bw'].has_key(app):
+        throughput[traffic]['realtime_bisection_bw'][app] = {}
+    if not throughput[traffic]['realtime_throughput'].has_key(app):
+        throughput[traffic]['realtime_throughput'][app] = {}
+    if not throughput[traffic]['accumulated_throughput'].has_key(app):
+        throughput[traffic]['accumulated_throughput'][app] = {}
+    if not throughput[traffic]['normalized_total_throughput'].has_key(app):
+        throughput[traffic]['normalized_total_throughput'][app] = 0
 
-	for i in xrange(args.duration + 1):
-		if not throughput[traffic]['realtime_bisection_bw'][app].has_key(i):
-			throughput[traffic]['realtime_bisection_bw'][app][i] = 0
-		if not throughput[traffic]['realtime_throughput'][app].has_key(i):
-			throughput[traffic]['realtime_throughput'][app][i] = 0
-		if not throughput[traffic]['accumulated_throughput'][app].has_key(i):
-			throughput[traffic]['accumulated_throughput'][app][i] = 0
+    for i in xrange(args.duration + 1):
+        if not throughput[traffic]['realtime_bisection_bw'][app].has_key(i):
+            throughput[traffic]['realtime_bisection_bw'][app][i] = 0
+        if not throughput[traffic]['realtime_throughput'][app].has_key(i):
+            throughput[traffic]['realtime_throughput'][app][i] = 0
+        if not throughput[traffic]['accumulated_throughput'][app].has_key(i):
+            throughput[traffic]['accumulated_throughput'][app][i] = 0
 
-	for row in lines_list:
-		iface_name = row[1]
-		if iface_name not in ['total', 'lo', 'eth0', 'enp0s3', 'enp0s8', 'docker0']:
-			if switch == '3[0-9][0-9][0-9]':
-				if sw.match(iface_name):
-					if int(iface_name[-1]) > args.k / 2:   # Choose down-going interfaces only.
-						if (int(row[0]) - first_second) <= args.duration:   # Take the good values only.
-							throughput[traffic]['realtime_bisection_bw'][app][int(row[0]) - first_second] += float(row[column_bytes_out_rate]) * 8.0 / (10 ** 6)   # Mbit/s
-							throughput[traffic]['realtime_throughput'][app][int(row[0]) - first_second] += float(row[column_bytes_out]) * 8.0 / (10 ** 6)   # Mbit
-			elif switch == '1001':   # Choose all the interfaces. (For NonBlocking Topo only)
-				if sw.match(iface_name):
-					if (int(row[0]) - first_second) <= args.duration:
-						throughput[traffic]['realtime_bisection_bw'][app][int(row[0]) - first_second] += float(row[column_bytes_out_rate]) * 8.0 / (10 ** 6)   # Mbit/s
-						throughput[traffic]['realtime_throughput'][app][int(row[0]) - first_second] += float(row[column_bytes_out]) * 8.0 / (10 ** 6)   # Mbit
-			else:
-				pass
+    for row in lines_list:
+        iface_name = row[1]
+        if iface_name not in ['total', 'lo', 'eth0', 'enp0s3', 'enp0s8', 'docker0']:
+            if switch == '3[0-9][0-9][0-9]':
+                if sw.match(iface_name):
+                    if int(iface_name[-1]) > args.k / 2:   # Choose down-going interfaces only.
+                        if (int(row[0]) - first_second) <= args.duration:   # Take the good values only.
+                            throughput[traffic]['realtime_bisection_bw'][app][int(row[0]) - first_second] += float(row[column_bytes_out_rate]) * 8.0 / (10 ** 6)   # Mbit/s
+                            throughput[traffic]['realtime_throughput'][app][int(row[0]) - first_second] += float(row[column_bytes_out]) * 8.0 / (10 ** 6)   # Mbit
+            elif switch == '1001':   # Choose all the interfaces. (For NonBlocking Topo only)
+                if sw.match(iface_name):
+                    if (int(row[0]) - first_second) <= args.duration:
+                        throughput[traffic]['realtime_bisection_bw'][app][int(row[0]) - first_second] += float(row[column_bytes_out_rate]) * 8.0 / (10 ** 6)   # Mbit/s
+                        throughput[traffic]['realtime_throughput'][app][int(row[0]) - first_second] += float(row[column_bytes_out]) * 8.0 / (10 ** 6)   # Mbit
+            else:
+                pass
 
-	for i in xrange(args.duration + 1):
-		for j in xrange(i+1):
-			throughput[traffic]['accumulated_throughput'][app][i] += throughput[traffic]['realtime_throughput'][app][j]   # Mbit
+    for i in xrange(args.duration + 1):
+        for j in xrange(i+1):
+            throughput[traffic]['accumulated_throughput'][app][i] += throughput[traffic]['realtime_throughput'][app][j]   # Mbit
 
-	throughput[traffic]['normalized_total_throughput'][app] = throughput[traffic]['accumulated_throughput'][app][args.duration] / (full_bisection_bw * args.duration)   # percentage
+    throughput[traffic]['normalized_total_throughput'][app] = throughput[traffic]['accumulated_throughput'][app][args.duration] / (full_bisection_bw * args.duration)   # percentage
 
-	return throughput
+    return throughput
 
 def get_value_list_1(throughput, traffic, item, app):
-	"""
-		Get the values from the "throughput" data structure.
-	"""
-	value_list = []
-	for i in xrange(args.duration + 1):
-		value_list.append(throughput[traffic][item][app][i])
-	return value_list
+    """
+        Get the values from the "throughput" data structure.
+    """
+    value_list = []
+    for i in xrange(args.duration + 1):
+        value_list.append(throughput[traffic][item][app][i])
+    return value_list
 
 def get_average_bisection_bw(throughput, traffics, app):
-	value_list = []
-	complete_list = []
-	for traffic in traffics:
-		complete_list.append(throughput[traffic]['accumulated_throughput'][app][args.duration] / float(args.duration))
-	for i in xrange(9):
-		value_list.append(calculate_average(complete_list[(i * period): (i * period + period)]))
-	return value_list
+    value_list = []
+    complete_list = []
+    for traffic in traffics:
+        complete_list.append(throughput[traffic]['accumulated_throughput'][app][args.duration] / float(args.duration))
+    for i in xrange(9):
+        value_list.append(calculate_average(complete_list[(i * period): (i * period + period)]))
+    return value_list
 
 def get_value_list_2(value_dict, traffics, item, app):
-	"""
-		Get the values from the  data structure.
-	"""
-	value_list = []
-	complete_list = []
-	for traffic in traffics:
-		complete_list.append(value_dict[traffic][item][app])
-	for i in xrange(9):
-		value_list.append(calculate_average(complete_list[(i * period): (i * period + period)]))
-	return value_list
+    """
+        Get the values from the  data structure.
+    """
+    value_list = []
+    complete_list = []
+    for traffic in traffics:
+        complete_list.append(value_dict[traffic][item][app])
+    for i in xrange(9):
+        value_list.append(calculate_average(complete_list[(i * period): (i * period + period)]))
+    return value_list
 
 def get_utilization(utilization, traffic, app, input_file):
-	"""
-		Get link utilization and link bandwidth utilization.
-	"""
-	lines_list = read_file_1(input_file)
-	first_second = int(lines_list[0][0])
-	column_packets_out = 11   # packets_out
-	column_packets_in = 10   # packets_in
-	column_bytes_out = 6   # bytes_out
-	column_bytes_in = 5   # bytes_in
+    """
+        Get link utilization and link bandwidth utilization.
+    """
+    lines_list = read_file_1(input_file)
+    first_second = int(lines_list[0][0])
+    column_packets_out = 11   # packets_out
+    column_packets_in = 10   # packets_in
+    column_bytes_out = 6   # bytes_out
+    column_bytes_in = 5   # bytes_in
 
-	if not utilization.has_key(traffic):
-		utilization[traffic] = {}
-	if not utilization[traffic].has_key(app):
-		utilization[traffic][app] = {}
+    if not utilization.has_key(traffic):
+        utilization[traffic] = {}
+    if not utilization[traffic].has_key(app):
+        utilization[traffic][app] = {}
 
-	for row in lines_list:
-		iface_name = row[1]
-		if iface_name.startswith('1'):
-			if (int(row[0]) - first_second) <= args.duration:   # Take the good values only.
-				if not utilization[traffic][app].has_key(iface_name):
-					utilization[traffic][app][iface_name] = {'LU_out':0, 'LU_in':0, 'LBU_out':0, 'LBU_in':0}
-				# if int(row[11]) > 2:
-				if row[6] not in ['0', '60', '120']:
-					utilization[traffic][app][iface_name]['LU_out'] = 1
-				# if int(row[10]) > 2:
-				if row[5] not in ['0', '60', '120']:
-					utilization[traffic][app][iface_name]['LU_in'] = 1
-				utilization[traffic][app][iface_name]['LBU_out'] += int(row[6])
-				utilization[traffic][app][iface_name]['LBU_in'] += int(row[5])
-		elif iface_name.startswith('2'):
-			if int(iface_name[-1]) > args.k / 2:   # Choose down-going interfaces only.
-				if (int(row[0]) - first_second) <= args.duration:   # Take the good values only.
-					if not utilization[traffic][app].has_key(iface_name):
-						utilization[traffic][app][iface_name] = {'LU_out':0, 'LU_in':0, 'LBU_out':0, 'LBU_in':0}
-					# if int(row[11]) > 2:
-					if row[6] not in ['0', '60', '120']:
-						utilization[traffic][app][iface_name]['LU_out'] = 1
-					# if int(row[10]) > 2:
-					if row[5] not in['0', '60', '120']:
-						utilization[traffic][app][iface_name]['LU_in'] = 1
-					utilization[traffic][app][iface_name]['LBU_out'] += int(row[6])
-					utilization[traffic][app][iface_name]['LBU_in'] += int(row[5])
-		else:
-			pass
+    for row in lines_list:
+        iface_name = row[1]
+        if iface_name.startswith('1'):
+            if (int(row[0]) - first_second) <= args.duration:   # Take the good values only.
+                if not utilization[traffic][app].has_key(iface_name):
+                    utilization[traffic][app][iface_name] = {'LU_out':0, 'LU_in':0, 'LBU_out':0, 'LBU_in':0}
+                # if int(row[11]) > 2:
+                if row[6] not in ['0', '60', '120']:
+                    utilization[traffic][app][iface_name]['LU_out'] = 1
+                # if int(row[10]) > 2:
+                if row[5] not in ['0', '60', '120']:
+                    utilization[traffic][app][iface_name]['LU_in'] = 1
+                utilization[traffic][app][iface_name]['LBU_out'] += int(row[6])
+                utilization[traffic][app][iface_name]['LBU_in'] += int(row[5])
+        elif iface_name.startswith('2'):
+            if int(iface_name[-1]) > args.k / 2:   # Choose down-going interfaces only.
+                if (int(row[0]) - first_second) <= args.duration:   # Take the good values only.
+                    if not utilization[traffic][app].has_key(iface_name):
+                        utilization[traffic][app][iface_name] = {'LU_out':0, 'LU_in':0, 'LBU_out':0, 'LBU_in':0}
+                    # if int(row[11]) > 2:
+                    if row[6] not in ['0', '60', '120']:
+                        utilization[traffic][app][iface_name]['LU_out'] = 1
+                    # if int(row[10]) > 2:
+                    if row[5] not in['0', '60', '120']:
+                        utilization[traffic][app][iface_name]['LU_in'] = 1
+                    utilization[traffic][app][iface_name]['LBU_out'] += int(row[6])
+                    utilization[traffic][app][iface_name]['LBU_in'] += int(row[5])
+        else:
+            pass
 
-	return utilization
+    return utilization
 
 def get_link_utilization_ratio(utilization, traffics, app):
-	value_list = []
-	num_list = []
-	complete_list = []
-	average_list = []
-	for traffic in traffics:
-		num = 0
-		for interface in utilization[traffic][app].keys():
-			if utilization[traffic][app][interface]['LU_out'] == 1:
-				num += 1
-			if utilization[traffic][app][interface]['LU_in'] == 1:
-				num += 1
-		num_list.append(num)
-		complete_list.append(float(num) / (len(utilization[traffic][app].keys()) * 2))
-	for i in xrange(9):
-		value_list.append(calculate_average(complete_list[(i * period): (i * period + period)]))
-	for i in xrange(9):
-		average_list.append(calculate_average(num_list[(i * period): (i * period + period)]))
-	# print "average_list:", average_list
-	return value_list
+    value_list = []
+    num_list = []
+    complete_list = []
+    average_list = []
+    for traffic in traffics:
+        num = 0
+        for interface in utilization[traffic][app].keys():
+            if utilization[traffic][app][interface]['LU_out'] == 1:
+                num += 1
+            if utilization[traffic][app][interface]['LU_in'] == 1:
+                num += 1
+        num_list.append(num)
+        complete_list.append(float(num) / (len(utilization[traffic][app].keys()) * 2))
+    for i in xrange(9):
+        value_list.append(calculate_average(complete_list[(i * period): (i * period + period)]))
+    for i in xrange(9):
+        average_list.append(calculate_average(num_list[(i * period): (i * period + period)]))
+    # print "average_list:", average_list
+    return value_list
 
 def get_value_list_3(utilization, some_traffics, app):
-	"""
-		Get link bandwidth utilization ratio.
-	"""
-	value_list = []
-	link_bandwidth_utilization = {}
-	utilization_list = []
-	for i in np.linspace(0, 1, 101):
-		link_bandwidth_utilization[i] = 0
+    """
+        Get link bandwidth utilization ratio.
+    """
+    value_list = []
+    link_bandwidth_utilization = {}
+    utilization_list = []
+    for i in np.linspace(0, 1, 101):
+        link_bandwidth_utilization[i] = 0
 
-	for traffic in some_traffics:
-		for interface in utilization[traffic][app].keys():
-			ratio_out = float(utilization[traffic][app][interface]['LBU_out'] * 8) / (10 * (10 ** 6) * args.duration)
-			ratio_in = float(utilization[traffic][app][interface]['LBU_in'] * 8) / (10 * (10 ** 6) * args.duration)
-			utilization_list.append(ratio_out)
-			utilization_list.append(ratio_in)
+    for traffic in some_traffics:
+        for interface in utilization[traffic][app].keys():
+            ratio_out = float(utilization[traffic][app][interface]['LBU_out'] * 8) / (10 * (10 ** 6) * args.duration)
+            ratio_in = float(utilization[traffic][app][interface]['LBU_in'] * 8) / (10 * (10 ** 6) * args.duration)
+            utilization_list.append(ratio_out)
+            utilization_list.append(ratio_in)
 
-	for ratio in utilization_list:
-		for seq in link_bandwidth_utilization.keys():
-			if ratio <= seq:
-				link_bandwidth_utilization[seq] += 1
 
-	for seq in link_bandwidth_utilization.keys():
-		if len(utilization_list)!=0:
-			link_bandwidth_utilization[seq] = float(link_bandwidth_utilization[seq]) / len(utilization_list)
+    # print utilization_list
 
-	for seq in sorted(link_bandwidth_utilization.keys()):
-		value_list.append(link_bandwidth_utilization[seq])
+    #print get_variance(utilization_list)
 
-	return value_list
+    for ratio in utilization_list:
+        for seq in link_bandwidth_utilization.keys():
+            if ratio <= seq:
+                link_bandwidth_utilization[seq] += 1
+
+    for seq in link_bandwidth_utilization.keys():
+        if len(utilization_list)!=0:
+            link_bandwidth_utilization[seq] = float(link_bandwidth_utilization[seq]) / len(utilization_list)
+
+    for seq in sorted(link_bandwidth_utilization.keys()):
+        value_list.append(link_bandwidth_utilization[seq])
+
+    return value_list
+
+def get_LoadBalance(utilization, some_traffics, app):
+    link_bandwidth_utilization = {}
+    utilization_list = []
+    for i in np.linspace(0, 1, 101):
+        link_bandwidth_utilization[i] = 0
+
+    for traffic in some_traffics:
+        for interface in utilization[traffic][app].keys():
+            ratio_out = float(utilization[traffic][app][interface]['LBU_out'] * 8) / (10 * (10 ** 6) * args.duration)
+            ratio_in = float(utilization[traffic][app][interface]['LBU_in'] * 8) / (10 * (10 ** 6) * args.duration)
+            utilization_list.append(ratio_out)
+            utilization_list.append(ratio_in)
+
+    # print utilization_list
+
+    return get_variance(utilization_list)
+
+def get_variance(array):
+    avg = get_avg(array)
+    sum = 0.0
+    for num in array:
+        sum += (num-avg)*(num-avg)
+    return sum/len(array)
+
+
+def get_avg(array):
+    sum = 0.0
+    for num in array:
+        sum += num
+    return sum/len(array)
 
 def plot_results():
-	"""
-		Plot the results:
-		1. Plot average bisection bandwidth
-		2. Plot normalized total throughput
-		3. Plot link utilization ratio
-		4. Plot link bandwidth utilization ratio
+    """
+        Plot the results:
+        1. Plot average bisection bandwidth
+        2. Plot normalized total throughput
+        3. Plot link utilization ratio
+        4. Plot link bandwidth utilization ratio
 
-		throughput = {
-						'random1':
-						{
-							'realtime_bisection_bw': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
-							'realtime_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
-							'accumulated_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
-							'normalized_total_throughput': {'BFlows':x%, 'ECMP':x%, ...}
-						},
-						'random2':
-						{
-							'realtime_bisection_bw': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
-							'realtime_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
-							'accumulated_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
-							'normalized_total_throughput': {'BFlows':x%, 'ECMP':x%, ...}
-						},
-						...
-					}
-	"""
-	full_bisection_bw = 10.0 * (args.k ** 3 / 4)   # (unit: Mbit/s)
-	utmost_throughput = full_bisection_bw * args.duration
+        throughput = {
+                        'random1':
+                        {
+                            'realtime_bisection_bw': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
+                            'realtime_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
+                            'accumulated_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
+                            'normalized_total_throughput': {'BFlows':x%, 'ECMP':x%, ...}
+                        },
+                        'random2':
+                        {
+                            'realtime_bisection_bw': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
+                            'realtime_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
+                            'accumulated_throughput': {'BFlows':{0:x, 1:x, ..}, 'ECMP':{0:x, 1:x, ..}, ...},
+                            'normalized_total_throughput': {'BFlows':x%, 'ECMP':x%, ...}
+                        },
+                        ...
+                    }
+    """
+    full_bisection_bw = 10.0 * (args.k ** 3 / 4)   # (unit: Mbit/s)
+    utmost_throughput = full_bisection_bw * args.duration
 
-	throughput = {}
-	utilization = {}
+    throughput = {}
+    utilization = {}
 
 
-	for traffic in traffics:
-		for app in apps:
-			bwmng_file = args.out_dir + '/%s/%s/%s/bwmng.txt' % (args.flows_num_per_host, traffic, app)
-			throughput = get_throughput(throughput, traffic, app, bwmng_file)
-			utilization = get_utilization(utilization, traffic, app, bwmng_file)
+    for traffic in traffics:
+        for app in apps:
+            bwmng_file = args.out_dir + '/%s/%s/%s/bwmng.txt' % (args.flows_num_per_host, traffic, app)
+            throughput = get_throughput(throughput, traffic, app, bwmng_file)
+            utilization = get_utilization(utilization, traffic, app, bwmng_file)
 
-	# 1. Plot average throughput.
-	fig = plt.figure()
-	fig.set_size_inches(10, 5)
-	num_groups = len(traffics_brief)
-	num_bar = len(apps)
-	# ECMP_value_list = get_average_bisection_bw(throughput, traffics, 'ECMP')
-	# Hedera_value_list = get_average_bisection_bw(throughput, traffics, 'Hedera')
-	# PureSDN_value_list = get_average_bisection_bw(throughput, traffics, 'PureSDN')
-	# BFlows_value_list = get_average_bisection_bw(throughput, traffics, 'BFlows')
-	# NonBlocking_value_list = get_average_bisection_bw(throughput, traffics, 'Fuzzy')
-	ECMP1_value_list = get_average_bisection_bw(throughput, traffics, 'ECMP1')
-	#ECMP2_value_list = get_average_bisection_bw(throughput, traffics, 'ECMP2')
-	Hedera1_value_list = get_average_bisection_bw(throughput, traffics, 'Hedera1')
-	#Hedera2_value_list = get_average_bisection_bw(throughput, traffics, 'Hedera2')
-	Fuzzy1_value_list = get_average_bisection_bw(throughput, traffics, 'Fuzzy1')
-	#Fuzzy2_value_list = get_average_bisection_bw(throughput, traffics, 'Fuzzy2')
-	# BFlows_value_list = get_average_bisection_bw(throughput, traffics, 'BFlows')
-	# NonBlocking_value_list = get_average_bisection_bw(throughput, traffics, 'Fuzzy')
-	# print "ECMP_value_list:", ECMP_value_list
-	# print "Hedera_value_list:", Hedera_value_list
-	# print "PureSDN_value_list:", PureSDN_value_list
-	# print "BFlows_value_list:", BFlows_value_list
-	index = np.arange(num_groups) + 0.15
-	bar_width = 0.13
-	plt.bar(index, ECMP1_value_list, bar_width, color='b', label='ECMP1')
-	#plt.bar(index + 1 * bar_width, ECMP2_value_list, bar_width, color='b', label='ECMP2')
-	plt.bar(index + 1 * bar_width, Hedera1_value_list, bar_width, color='y', label='Hedera1')
-	#plt.bar(index + 3 * bar_width, Hedera2_value_list, bar_width, color='y', label='Hedera2')
-	plt.bar(index + 2 * bar_width, Fuzzy1_value_list, bar_width, color='r', label='Fuzzy1')
-	#plt.bar(index + 5 * bar_width, Fuzzy2_value_list, bar_width, color='k', label='Fuzzy2')
-	plt.xticks(index + num_bar / 2.0 * bar_width, traffics_brief, fontsize='small')
-	plt.ylabel('Average Throughput\n(Mbps)', fontsize='x-large')
-	plt.ylim(0, full_bisection_bw)
-	plt.yticks(np.linspace(0, full_bisection_bw, 11))
-	plt.legend(loc='upper right', ncol=len(apps), fontsize='small')
-	plt.grid(axis='y')
-	plt.tight_layout()
-	plt.savefig(args.out_dir + '/%s-1.average_throughput.png' % args.flows_num_per_host)
+    # 1. Plot average throughput.
+    fig = plt.figure()
+    fig.set_size_inches(10, 5)
+    num_groups = len(traffics_brief)
+    num_bar = len(apps)
+    # ECMP_value_list = get_average_bisection_bw(throughput, traffics, 'ECMP')
+    # Hedera_value_list = get_average_bisection_bw(throughput, traffics, 'Hedera')
+    # PureSDN_value_list = get_average_bisection_bw(throughput, traffics, 'PureSDN')
+    # BFlows_value_list = get_average_bisection_bw(throughput, traffics, 'BFlows')
+    # NonBlocking_value_list = get_average_bisection_bw(throughput, traffics, 'Fuzzy')
+    ECMP1_value_list = get_average_bisection_bw(throughput, traffics, 'ECMP1')
+    #ECMP2_value_list = get_average_bisection_bw(throughput, traffics, 'ECMP2')
+    Hedera1_value_list = get_average_bisection_bw(throughput, traffics, 'Hedera1')
+    #Hedera2_value_list = get_average_bisection_bw(throughput, traffics, 'Hedera2')
+    Fuzzy1_value_list = get_average_bisection_bw(throughput, traffics, 'Fuzzy1')
+    #Fuzzy2_value_list = get_average_bisection_bw(throughput, traffics, 'Fuzzy2')
+    # BFlows_value_list = get_average_bisection_bw(throughput, traffics, 'BFlows')
+    # NonBlocking_value_list = get_average_bisection_bw(throughput, traffics, 'Fuzzy')
+    # print "ECMP_value_list:", ECMP_value_list
+    # print "Hedera_value_list:", Hedera_value_list
+    # print "PureSDN_value_list:", PureSDN_value_list
+    # print "BFlows_value_list:", BFlows_value_list
+    index = np.arange(num_groups) + 0.15
+    bar_width = 0.13
+    plt.bar(index, ECMP1_value_list, bar_width, color='b', label='ECMP1')
+    #plt.bar(index + 1 * bar_width, ECMP2_value_list, bar_width, color='b', label='ECMP2')
+    plt.bar(index + 1 * bar_width, Hedera1_value_list, bar_width, color='y', label='Hedera1')
+    #plt.bar(index + 3 * bar_width, Hedera2_value_list, bar_width, color='y', label='Hedera2')
+    plt.bar(index + 2 * bar_width, Fuzzy1_value_list, bar_width, color='r', label='Fuzzy1')
+    #plt.bar(index + 5 * bar_width, Fuzzy2_value_list, bar_width, color='k', label='Fuzzy2')
+    plt.xticks(index + num_bar / 2.0 * bar_width, traffics_brief, fontsize='small')
+    plt.ylabel('Average Throughput\n(Mbps)', fontsize='x-large')
+    plt.ylim(0, full_bisection_bw)
+    plt.yticks(np.linspace(0, full_bisection_bw, 11))
+    plt.legend(loc='upper right', ncol=len(apps), fontsize='small')
+    plt.grid(axis='y')
+    plt.tight_layout()
+    plt.savefig(args.out_dir + '/%s-1.average_throughput.png' % args.flows_num_per_host)
 
-	# 2. Plot normalized total throughput.
-	item = 'normalized_total_throughput'
-	fig = plt.figure()
-	fig.set_size_inches(10, 5)
-	num_groups = len(traffics_brief)
-	num_bar = len(apps)
+    # 2. Plot normalized total throughput.
+    item = 'normalized_total_throughput'
+    fig = plt.figure()
+    fig.set_size_inches(10, 5)
+    num_groups = len(traffics_brief)
+    num_bar = len(apps)
 
-	ECMP1_value_list = get_value_list_2(throughput, traffics,item, 'ECMP1')
-	#ECMP2_value_list = get_value_list_2(throughput, traffics,item, 'ECMP2')
-	Hedera1_value_list = get_value_list_2(throughput, traffics,item, 'Hedera1')
-	#Hedera2_value_list = get_value_list_2(throughput, traffics,item, 'Hedera2')
-	Fuzzy1_value_list = get_value_list_2(throughput, traffics, item,'Fuzzy1')
-	#Fuzzy2_value_list = get_value_list_2(throughput, traffics,item, 'Fuzzy2')
+    ECMP1_value_list = get_value_list_2(throughput, traffics,item, 'ECMP1')
+    #ECMP2_value_list = get_value_list_2(throughput, traffics,item, 'ECMP2')
+    Hedera1_value_list = get_value_list_2(throughput, traffics,item, 'Hedera1')
+    #Hedera2_value_list = get_value_list_2(throughput, traffics,item, 'Hedera2')
+    Fuzzy1_value_list = get_value_list_2(throughput, traffics, item,'Fuzzy1')
+    #Fuzzy2_value_list = get_value_list_2(throughput, traffics,item, 'Fuzzy2')
 
-	# ECMP_value_list = get_value_list_2(throughput, traffics, item, 'ECMP')
-	# Hedera_value_list = get_value_list_2(throughput, traffics, item, 'Hedera')
-	# PureSDN_value_list = get_value_list_2(throughput, traffics, item, 'PureSDN')
-	# BFlows_value_list = get_value_list_2(throughput, traffics, item, 'BFlows')
-	# NonBlocking_value_list = get_value_list_2(throughput, traffics, item, 'Fuzzy')
-	index = np.arange(num_groups) + 0.15
-	bar_width = 0.13
-	# plt.bar(index, ECMP_value_list, bar_width, color='b', label='ECMP')
-	# plt.bar(index + 1 * bar_width, Hedera_value_list, bar_width, color='y', label='Hedera')
-	# plt.bar(index + 2 * bar_width, PureSDN_value_list, bar_width, color='g', label='PureSDN')
-	# plt.bar(index + 3 * bar_width, BFlows_value_list, bar_width, color='r', label='BFlows')
-	# plt.bar(index + 4 * bar_width, NonBlocking_value_list, bar_width, color='k', label='Fuzzy')
-	plt.bar(index, ECMP1_value_list, bar_width, color='b', label='ECMP1')
-	#plt.bar(index + 1 * bar_width, ECMP2_value_list, bar_width, color='b', label='ECMP2')
-	plt.bar(index + 1 * bar_width, Hedera1_value_list, bar_width, color='y', label='Hedera1')
-	#plt.bar(index + 3 * bar_width, Hedera2_value_list, bar_width, color='g', label='Hedera2')
-	plt.bar(index + 2 * bar_width, Fuzzy1_value_list, bar_width, color='r', label='Fuzzy1')
-	#plt.bar(index + 5 * bar_width, Fuzzy2_value_list, bar_width, color='r', label='Fuzzy2')
-	plt.xticks(index + num_bar / 2.0 * bar_width, traffics_brief, fontsize='small')
-	plt.ylabel('Normalized Total Throughput\n', fontsize='x-large')
-	plt.ylim(0, 1)
-	plt.yticks(np.linspace(0, 1, 11))
-	plt.legend(loc='upper right', ncol=len(apps), fontsize='small')
-	plt.grid(axis='y')
-	plt.tight_layout()
-	plt.savefig(args.out_dir + '/%s-2.normalized_total_throughput.png' % args.flows_num_per_host)
+    # ECMP_value_list = get_value_list_2(throughput, traffics, item, 'ECMP')
+    # Hedera_value_list = get_value_list_2(throughput, traffics, item, 'Hedera')
+    # PureSDN_value_list = get_value_list_2(throughput, traffics, item, 'PureSDN')
+    # BFlows_value_list = get_value_list_2(throughput, traffics, item, 'BFlows')
+    # NonBlocking_value_list = get_value_list_2(throughput, traffics, item, 'Fuzzy')
+    index = np.arange(num_groups) + 0.15
+    bar_width = 0.13
+    # plt.bar(index, ECMP_value_list, bar_width, color='b', label='ECMP')
+    # plt.bar(index + 1 * bar_width, Hedera_value_list, bar_width, color='y', label='Hedera')
+    # plt.bar(index + 2 * bar_width, PureSDN_value_list, bar_width, color='g', label='PureSDN')
+    # plt.bar(index + 3 * bar_width, BFlows_value_list, bar_width, color='r', label='BFlows')
+    # plt.bar(index + 4 * bar_width, NonBlocking_value_list, bar_width, color='k', label='Fuzzy')
+    plt.bar(index, ECMP1_value_list, bar_width, color='b', label='ECMP1')
+    #plt.bar(index + 1 * bar_width, ECMP2_value_list, bar_width, color='b', label='ECMP2')
+    plt.bar(index + 1 * bar_width, Hedera1_value_list, bar_width, color='y', label='Hedera1')
+    #plt.bar(index + 3 * bar_width, Hedera2_value_list, bar_width, color='g', label='Hedera2')
+    plt.bar(index + 2 * bar_width, Fuzzy1_value_list, bar_width, color='r', label='Fuzzy1')
+    #plt.bar(index + 5 * bar_width, Fuzzy2_value_list, bar_width, color='r', label='Fuzzy2')
+    plt.xticks(index + num_bar / 2.0 * bar_width, traffics_brief, fontsize='small')
+    plt.ylabel('Normalized Total Throughput\n', fontsize='x-large')
+    plt.ylim(0, 1)
+    plt.yticks(np.linspace(0, 1, 11))
+    plt.legend(loc='upper right', ncol=len(apps), fontsize='small')
+    plt.grid(axis='y')
+    plt.tight_layout()
+    plt.savefig(args.out_dir + '/%s-2.normalized_total_throughput.png' % args.flows_num_per_host)
 
-	# 3. Plot link utilization ratio.
-	fig = plt.figure()
-	fig.set_size_inches(10, 5)
-	num_groups = len(traffics_brief)
-	num_bar = len(apps) - 1
+    # 3. Plot loadbalance ratio.
+    fig = plt.figure()
+    fig.set_size_inches(10, 5)
+    num_groups = len(traffics_brief)
+    num_bar = len(apps)
 
-	ECMP1_value_list = get_link_utilization_ratio(utilization, traffics, 'ECMP1')
-	#ECMP2_value_list = get_link_utilization_ratio(throughput, traffics, 'ECMP2')
-	Hedera1_value_list = get_link_utilization_ratio(utilization, traffics, 'Hedera1')
-	#Hedera2_value_list = get_link_utilization_ratio(throughput, traffics, 'Hedera2')
-	Fuzzy1_value_list = get_link_utilization_ratio(utilization, traffics, 'Fuzzy1')
-	#Fuzzy2_value_list = get_link_utilization_ratio(throughput, traffics, 'Fuzzy2')
+    index = np.arange(num_groups) + 0.15
+    bar_width = 0.13
 
-	# ECMP_value_list = get_link_utilization_ratio(utilization, traffics, 'ECMP')
-	# BFlows_value_list = get_link_utilization_ratio(utilization, traffics, 'BFlows')
-	# PureSDN_value_list = get_link_utilization_ratio(utilization, traffics, 'PureSDN')
-	# Hedera_value_list = get_link_utilization_ratio(utilization, traffics, 'Hedera')
-	index = np.arange(num_groups) + 0.15
-	bar_width = 0.15
-	# plt.bar(index, ECMP_value_list, bar_width, color='b', label='ECMP')
-	# plt.bar(index + 1 * bar_width, BFlows_value_list, bar_width, color='r', label='BFlows')
-	# plt.bar(index + 2 * bar_width, PureSDN_value_list, bar_width, color='g', label='PureSDN')
-	# plt.bar(index + 3 * bar_width, Hedera_value_list, bar_width, color='y', label='Hedera')
+    list1=[]
+    list2=[]
+    list3=[]
+    for i in xrange(len(traffics_brief)):
+        #plt.subplot(num_raw, num_column, NO_subplot)
+        list1.append(get_LoadBalance(utilization, traffics[(i * period): (i * period + period)], 'ECMP1'))
+        list2.append(get_LoadBalance(utilization, traffics[(i * period): (i * period + period)], 'Hedera1'))
+        list3.append(get_LoadBalance(utilization, traffics[(i * period): (i * period + period)], 'Fuzzy1'))
 
-	plt.bar(index, ECMP1_value_list, bar_width, color='b', label='ECMP1')
-	#plt.bar(index + 1 * bar_width, ECMP2_value_list, bar_width, color='b', label='ECMP2')
-	plt.bar(index + 1 * bar_width, Hedera1_value_list, bar_width, color='y', label='Hedera1')
-	#plt.bar(index + 3 * bar_width, Hedera2_value_list, bar_width, color='g', label='Hedera2')
-	plt.bar(index + 2 * bar_width, Fuzzy1_value_list, bar_width, color='r', label='Fuzzy1')
-	#plt.bar(index + 5 * bar_width, Fuzzy2_value_list, bar_width, color='r', label='Fuzzy2')
-	plt.xticks(index + num_bar / 2.0 * bar_width, traffics_brief, fontsize='small')
-	plt.ylabel('Link utilization Ratio\n', fontsize='x-large')
-	plt.ylim(0, 1)
-	plt.yticks(np.linspace(0, 1, 11))
-	plt.legend(loc='upper right', ncol=len(apps)-1, fontsize='small')
-	plt.grid(axis='y')
-	plt.tight_layout()
-	plt.savefig(args.out_dir + '/%s-3.link_utilization_ratio.png' % args.flows_num_per_host)
+    plt.bar(index, list1, bar_width, color='b', label='ECMP1')
+    # plt.bar(index + 1 * bar_width, ECMP2_value_list, bar_width, color='b', label='ECMP2')
+    plt.bar(index + 1 * bar_width, list2, bar_width, color='y', label='Hedera1')
+    # plt.bar(index + 3 * bar_width, Hedera2_value_list, bar_width, color='g', label='Hedera2')
+    plt.bar(index + 2 * bar_width, list3, bar_width, color='r', label='Fuzzy1')
+    plt.xticks(index + num_bar / 2.0 * bar_width, traffics_brief, fontsize='small')
+    plt.ylabel('Load Balance Ratio\n', fontsize='x-large')
+    plt.ylim(0, 0.25)
+    plt.yticks(np.linspace(0, 0.25, 11))
+    plt.legend(loc='upper right', ncol=len(apps), fontsize='small')
+    plt.grid(axis='y')
+    plt.tight_layout()
+    plt.savefig(args.out_dir + '/%s-3.loadbalance.png' % args.flows_num_per_host)
 
-	# 4. Plot link bandwidth utilization ratio.
-	fig = plt.figure()
-	fig.set_size_inches(12, 20)
-	num_subplot = len(traffics_brief)
-	num_raw = 5
-	num_column = 2
-	NO_subplot = 1
-	x = np.linspace(0, 1, 101)
-	for i in xrange(len(traffics_brief)):
-		plt.subplot(num_raw, num_column, NO_subplot)
-		# y1 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'ECMP')
-		# y2 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'Hedera')
-		# y3 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'PureSDN')
-		# y4 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'BFlows')
-		# y5 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'Fuzzy')
-		y1 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'ECMP1')
-		#y2 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'ECMP2')
-		y3 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'Hedera1')
-		#y4 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'Hedera2')
-		y5 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'Fuzzy1')
-		#y6 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'Fuzzy2')
-		# print "y1[10]:", y1[10]
-		# print "y2[10]:", y2[10]
-		# print "y3[10]:", y3[10]
-		# print "y4[10]:", y4[10]
-		# plt.plot(x, y1, 'b-', linewidth=2, label="ECMP")
-		# plt.plot(x, y2, 'y-', linewidth=2, label="Hedera")
-		# plt.plot(x, y3, 'g-', linewidth=2, label="PureSDN")
-		# plt.plot(x, y4, 'r-', linewidth=2, label="BFlows")
-		# plt.plot(x, y5, 'k-', linewidth=2, label="Fuzzy")
-		plt.plot(x, y1, 'b-', linewidth=2, label="ECMP1")
-		#plt.plot(x, y2, 'b-', linewidth=2, label="ECMP2")
-		plt.plot(x, y3, 'y-', linewidth=2, label="Hedera1")
-		#plt.plot(x, y4, 'g-', linewidth=2, label="Hedera2")
-		plt.plot(x, y5, 'r-', linewidth=2, label="Fuzzy1")
-		#plt.plot(x, y6, 'r-', linewidth=2, label="Fuzzy2")
-		plt.title('%s' % traffics_brief[i], fontsize='xx-large')
-		plt.xlabel('Link Bandwidth Utilization Ratio', fontsize='large')
-		plt.xlim(0, 1)
-		plt.xticks(np.linspace(0, 1, 11))
-		plt.ylabel('CDF of Link Bandwidth\nUtilization Ratio', fontsize='x-large')
-		plt.ylim(0, 1)
-		plt.yticks(np.linspace(0, 1, 11))
-		plt.legend(loc='lower right', fontsize='large')
-		plt.grid(True)
-		NO_subplot += 1
-	plt.tight_layout()
-	plt.savefig(args.out_dir + '/%s-4.link_bandwidth_utilization_ratio.png' % args.flows_num_per_host)
+    # 4. Plot link bandwidth utilization ratio.
+    fig = plt.figure()
+    fig.set_size_inches(12, 20)
+    num_subplot = len(traffics_brief)
+    num_raw = 5
+    num_column = 2
+    NO_subplot = 1
+    x = np.linspace(0, 1, 101)
+    for i in xrange(len(traffics_brief)):
+        plt.subplot(num_raw, num_column, NO_subplot)
+        # y1 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'ECMP')
+        # y2 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'Hedera')
+        # y3 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'PureSDN')
+        # y4 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'BFlows')
+        # y5 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'Fuzzy')
+        y1 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'ECMP1')
+        #y2 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'ECMP2')
+        y3 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'Hedera1')
+        #y4 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'Hedera2')
+        y5 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'Fuzzy1')
+        #y6 = get_value_list_3(utilization, traffics[(i * period): (i * period + period)], 'Fuzzy2')
+        # print "y1[10]:", y1[10]
+        # print "y2[10]:", y2[10]
+        # print "y3[10]:", y3[10]
+        # print "y4[10]:", y4[10]
+        # plt.plot(x, y1, 'b-', linewidth=2, label="ECMP")
+        # plt.plot(x, y2, 'y-', linewidth=2, label="Hedera")
+        # plt.plot(x, y3, 'g-', linewidth=2, label="PureSDN")
+        # plt.plot(x, y4, 'r-', linewidth=2, label="BFlows")
+        # plt.plot(x, y5, 'k-', linewidth=2, label="Fuzzy")
+        plt.plot(x, y1, 'b-', linewidth=2, label="ECMP1")
+        #plt.plot(x, y2, 'b-', linewidth=2, label="ECMP2")
+        plt.plot(x, y3, 'y-', linewidth=2, label="Hedera1")
+        #plt.plot(x, y4, 'g-', linewidth=2, label="Hedera2")
+        plt.plot(x, y5, 'r-', linewidth=2, label="Fuzzy1")
+        #plt.plot(x, y6, 'r-', linewidth=2, label="Fuzzy2")
+        plt.title('%s' % traffics_brief[i], fontsize='xx-large')
+        plt.xlabel('Link Bandwidth Utilization Ratio', fontsize='large')
+        plt.xlim(0, 1)
+        plt.xticks(np.linspace(0, 1, 11))
+        plt.ylabel('CDF of Link Bandwidth\nUtilization Ratio', fontsize='x-large')
+        plt.ylim(0, 1)
+        plt.yticks(np.linspace(0, 1, 11))
+        plt.legend(loc='lower right', fontsize='large')
+        plt.grid(True)
+        NO_subplot += 1
+    plt.tight_layout()
+    plt.savefig(args.out_dir + '/%s-4.link_bandwidth_utilization_ratio.png' % args.flows_num_per_host)
 
 
 if __name__ == '__main__':
-	plot_results()
+    plot_results()
